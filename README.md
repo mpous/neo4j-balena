@@ -1,6 +1,6 @@
 # neo4j graph database running on balena
 
-This is a proof of concept to run the graph database neo4j on balena x86 device.
+This is a proof of concept to run the graph database neo4j on balena x86 devices.
 
 ## Deploy the code
 
