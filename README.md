@@ -28,7 +28,7 @@ To add the neo4j Block, add this service in your `docker-compose.yml`, as shown 
 
 ```
   neo4j:
-    image: neo4j:latest
+    image: bh.cr/marc6/neo4j-amd64
     ports:
       - "7474:7474"
       - "7687:7687"
