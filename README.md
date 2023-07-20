@@ -22,6 +22,31 @@ The neo4j UI service is exposed on the `7474` port. You can access to the UI usi
 ![Captura de pantalla 2023-07-20 a les 14 16 09](https://github.com/mpous/neo4j-balena/assets/173156/c9fdff4c-48fd-4052-828f-12afa6dfec26)
 
 
+## neo4j Block configuration
+
+To add the neo4j Block, add this service in your `docker-compose.yml`, as shown below.
+
+```
+  neo4j:
+    image: neo4j:latest
+    ports:
+      - "7474:7474"
+      - "7687:7687"
+    volumes:
+      - neo4j-data:/data
+      - neo4j-logs:/logs
+    environment:
+      - NEO4J_AUTH=< your username >/< your password >
+    restart: always
+
+volumes:
+  neo4j-data:
+  neo4j-logs:
+```
+
+At this moment you will have the neo4j graph database UI available on the port `7474`.
+
+
 ## Troubleshooting
 
 If you detect any issue using this block, feel free to contact us at the [forums.balena.io](https://forums.balena.io).
