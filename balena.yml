@@ -1,0 +1,26 @@
+name: neo4j
+description: >-
+  Deploy neo4j graph database on balena devices.
+version: 0.0.1
+type: sw.application
+assets:
+  repository:
+    type: blob.asset
+    data:
+      url: 'https://github.com/mpous/neo4j-balena'
+  logo:
+    type: blob.asset
+    data:
+      url: 'https://raw.githubusercontent.com/mpous/neo4j-balena/main/logo.png'
+data:
+  applicationEnvironmentVariables:
+    - NEO4J_AUTH: "neo4j/balenabalenabalena"
+  defaultDeviceType: genericx86-64-ext
+  supportedDeviceTypes:
+    - genericx86-64-ext
+    - intel-nuc
+    - generic-amd64
+
+post-provisioning: >-
+  This is a balenaBlock to deploy the neo4j graph database on balena x86 devices.
+  
