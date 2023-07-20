@@ -19,6 +19,9 @@ The neo4j UI service is exposed on the `7474` port. You can access to the UI usi
 |neo4j|7474 (http)|neo4j|balenabalenabalena|
 
 
+![Captura de pantalla 2023-07-20 a les 14 16 09](https://github.com/mpous/neo4j-balena/assets/173156/c9fdff4c-48fd-4052-828f-12afa6dfec26)
+
+
 ## Troubleshooting
 
 If you detect any issue using this block, feel free to contact us at the [forums.balena.io](https://forums.balena.io).
